@@ -1,0 +1,6 @@
+is_global = true
+global_level = 100
+
+dotnet_diagnostic.CS1591.severity = none # Missing XML comment for publicly visible type or member 'X'
+
+dotnet_diagnostic.RS2007.severity = none # Analyzer release file 'AnalyzerReleases.Unshipped.md' has a missing or invalid release header '## Release X.X'

@@ -1,0 +1,26 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+insert_final_newline = false
+trim_trailing_whitespace = true
+
+[*.{csproj,props}]
+indent_size = 2
+
+[*.cs]
+csharp_using_directive_placement = inside_namespace
+resharper_csharp_qualified_using_at_nested_scope = true
+resharper_qualified_using_at_nested_scope = true
+
+dotnet_diagnostic.SA1101.severity = none # Prefix local calls with this
+dotnet_diagnostic.SA1600.severity = none # Elements should be documented
+dotnet_diagnostic.SA1601.severity = none # Partial elements should be documented
+dotnet_diagnostic.SA1633.severity = none # The file header is missing or not located at the top of the file.
+
+
+[*Test.cs]
+dotnet_diagnostic.VSTHRD200.severity = none # Use "Async" suffix in names of methods that return an awaitable type

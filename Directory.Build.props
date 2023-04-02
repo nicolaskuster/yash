@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <RepositoryRootDir>$(MSBuildThisFileDirectory)</RepositoryRootDir>
+    <Authors>Nicolas Kuster</Authors>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(RepositoryRootDir)LICENSE" Pack="true" PackagePath=""/>
+    <None Include="$(RepositoryRootDir)README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+</Project>
